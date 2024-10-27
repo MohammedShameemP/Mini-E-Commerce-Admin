@@ -1,0 +1,26 @@
+
+
+body{
+    height: 100%;
+   
+
+
+}
+
+.containershoes{
+  
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between ;
+ 
+    background-color: rgb(8, 8, 9);
+    border: 0;
+
+  
+
+
+}
+img{
+    width: 400px ;
+}

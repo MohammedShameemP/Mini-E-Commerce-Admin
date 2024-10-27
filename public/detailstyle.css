@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail{
+    display: flex;
+
+}
+.box1{
+
+    padding: 80px;
+    color:white;
+    border-right: 40px solid rgb(160, 158, 158);
+    background-color: black;
+}
+.c{
+    color: yellow;
+}
+.image2{
+   
+}
+.allimg{
+    display: flex;
+   
+    justify-content: end;
+    padding: 1px;
+    gap: 7px;
+}
+.image2{
+    width: 30px;
+}
+
+.editbtn{
+    padding:7px 20px;
+    background-color:#1b2951;
+    color: white;    
+    border-radius: 5px;
+}

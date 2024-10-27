@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>newproduct</title>
+	</head>
+	<body> -->
+		<!-- <link rel="stylesheet" href="stylepr.css" /> -->
+		
+		
+		<%- include('dashboard') %>
+		<link rel="stylesheet" href="newproduct.css">
+		<div class="main">
+			<div><h1>Add Product</h1></div>
+			<div></div>
+			<div class="containerp">
+				<form action="/addpro" method="post" enctype="multipart/form-data">
+					<div class="btn"><button>Add product</button></div>
+					<div>
+						<label for="" class="label1"
+							><h2>Product name:</h2>
+							<input type="text" name="name" placeholder="//........................................"
+						/></label>
+					</div>
+					<div>
+						<label for="" class="label2"
+							><h2>Product price :</h2>
+							<input type="text" name="price" placeholder="//........................................"
+						/></label>
+					</div>
+					<div>
+						<label for="" class="label2"
+							><h2>Product details:</h2>
+							<input type="text" name="details" placeholder="//........................................"
+						/></label>
+					</div>
+					<div>
+						<label for="" class="label2"
+							><h2>Product image:</h2>
+							<input type="file" name="image" class="file" placeholder="/img.src......................................."/>
+							<img class="preview" src="" alt="">
+
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script>
+			// Select all elements with the class "file"
+			const previews = document.querySelectorAll('.file');
+			
+			// Iterate over each file input element
+			previews.forEach(preview => {
+				// Add event listener for the "change" event
+				preview.addEventListener('change', event => {
+					// Get the selected file
+					const file = event.target.files[0];
+					
+					// If a file is selected
+					if (file) {
+						// Create a FileReader object
+						const reader = new FileReader();
+						
+						// Set up the FileReader onload event
+						reader.onload = function(e) {
+							// Get the image preview element
+							const previewImage = preview.parentElement.querySelector('.preview');
+							
+							// Update the src attribute of the image preview
+							previewImage.src = e.target.result;
+						}
+						
+						// Read the selected file as a data URL
+						reader.readAsDataURL(file);
+						console.log("okay");
+					}
+				});
+			});
+		</script>
+		
+
+
+	</body>
+</html>

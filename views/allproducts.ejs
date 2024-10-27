@@ -1,0 +1,12 @@
+<%- include('dashboard') %>
+<link rel="stylesheet" href="allproducts.css" />
+
+<div class="containershoes">
+	<% allProducts.forEach((item)=>{ %>
+	<a href="/productdetails?id=<%= item._id %>" class="shoe">
+		<img src="<%=item.image%>" alt="" />
+		<h2><%= item.name %></h2>
+		<h3><%= item.price %></h3>
+	</a>
+	<% }) %>
+</div>

@@ -1,0 +1,63 @@
+
+body{
+    display: flex;
+    justify-content: center;
+}
+.main{
+   border-bottom: 2px solid grey;
+   border-radius: 20px;  
+}
+.containerp{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+   
+    
+    width: 450px;
+    height: 420px;
+    
+
+}
+h1{
+    margin: 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 20px 20px;
+    background-color: rgb(5, 0, 0);
+    color: white    ;
+    
+}
+input{
+    border: 0;
+    
+    padding: 0 40px;
+    border-radius: 10px;
+
+    
+   
+   
+}
+::placeholder{
+    color: rgb(149, 147, 147);
+}
+label{
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid rgb(209, 198, 198);
+    border-radius: 20px;
+    padding: 10px;
+
+
+}
+button{
+    padding: 5px;
+    background-color:#1b2951;
+    color: white;
+    border-radius: 4px;
+}
+.btn{
+    display: flex;
+    justify-content: end;
+}

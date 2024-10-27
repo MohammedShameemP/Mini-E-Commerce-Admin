@@ -1,0 +1,108 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.adminin{
+    display: flex;
+     
+   
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.access{
+    width: 300px;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 2px white;
+    
+
+
+}
+.heading{
+    width: 100%;
+}
+.heading h1{
+    text-align: center;
+}
+.admin_body{
+    width:100%;
+    background: rgb(253, 253, 253);
+    padding: 10px;
+    border:5px solid rgb(67, 62, 164);
+    /* background: red; */
+
+}
+
+.user_container{
+    border: 3px solid grey;
+}
+
+
+table{
+   
+
+}
+
+th{
+    width:5%;
+    text-align: center;
+   
+   
+}
+
+td{
+    text-align: center;
+
+}
+
+a{
+    font-size: large;
+    color: white;
+    text-decoration: none;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    
+    border: 5px solid white;
+    
+
+
+    
+
+   
+}
+h1{
+   
+}
+
+.signout{
+
+    display: flex;
+    align-items: center;
+    
+    justify-content: end;
+    padding:0 0 0 700px;
+
+
+    
+
+}
+button
+{
+    background-color:#1b2e51;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+

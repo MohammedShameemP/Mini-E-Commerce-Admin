@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/detailstyle.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div>
+			<div><h1>Product Details</h1></div>
+			<div class="detail">
+				<div class="boxmain">
+					<img src="/<%=item.image %> " alt="sdd" />
+				</div>
+				<div class="box1">
+					<div class="allimg">
+						<img class="image2" src="/twitter.png" alt="" />
+						<img class="image2" src="/fb.png" alt="" />
+						<img class="image2" src="/youtube.png" alt="" />
+						<img class="image2" src="/insta.png" alt="" />
+					</div>
+
+					<h1><%= item.name %></h1>
+					<h2><%= item.price %></h2>
+
+					<h3><%= item.extra %></h3>
+					<h3><%= item.details %></h3>
+
+					<form action="/productstatus/<%= item._id %>" method="POST">
+						<button id="active_btn" class="p-1 rounded-5 touch" type="submit"><% if(item.active) { %> Active <% } else { %> Inactive <% } %></button>
+					</form>
+					<a href="/edit/<%= item._id %>">
+						<button class="editbtn">edit</button>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			const active_btn = document.getElementById('active_btn');
+			
+			console.log(active_btn.innerText);
+			if(active_btn.innerText==="Active"){
+				console.log(true);
+				active_btn.style.background = "green";
+			}else{
+				console.log(false);
+				active_btn.style.background = "red";
+
+			}
+		</script>
+	</body>
+</html>

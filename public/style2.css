@@ -1,0 +1,69 @@
+.container{
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containershoes{
+    
+ width: 90%;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 20px;
+
+
+}
+.shoe{
+    /* width: 400px; */
+    background-color: aquamarine;
+}
+img{
+    width: 100%;
+}
+.addform{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    padding: 10px 0;
+}
+.addform button{
+    padding: 5px 30px;
+}
+.addbtn{
+    background-color:#1b2951;
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
+}
+.h1btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+h2{
+    padding: 0 10px;
+}
+h3{
+ 
+    padding: 0 10px;
+}
+.nike22{
+    width: 70px;
+
+    
+   
+}
+.imgnike{
+    display: flex;
+    gap: 10px    ;
+}
+.nikeh1{
+    color: rgba(0, 0, 0, 0.875);
+    font-style:initial;
+    
+   
+    
+}

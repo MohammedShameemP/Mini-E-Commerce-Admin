@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Homepage</title>
+		<link rel="stylesheet" href="style2.css" />
+	</head>
+	<body>
+		<form id="signoutForm" action="/logout" method="POST">
+			<div class="h1btn">
+				<h1>Welcome <%= username %>.....</h1>
+				<div class="imgnike">
+					<h1 class="nikeh1">Nike</h1>
+					<img class="nike22" src="nike.png" alt="" />
+				</div>
+				<button type="submit" style="padding: 10px 30px; background-color: #1b2951; color: white; font-size: medium; border-radius: 10px">SignOut</button>
+			</div>
+		</form>
+		<div class="container">
+			<form class="addform" action="/addProduct" method="get">
+				<button class="addbtn" type="submit">ADD</button>
+			</form>
+			<div class="containershoes">
+				<% shoes.forEach((item,index)=>{ %>
+				<a href="/homepage/productdetails?id=<%= item._id %>" class="shoe">
+					<img src="<%=item.image%>" alt="">
+					<h2><%= item.name %></h2>
+					<h3><%= item.price %></h3>
+				</a>
+				<% }) %>
+			</div>
+		</div>
+	</body>
+</html>

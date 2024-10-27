@@ -1,0 +1,69 @@
+
+<%- include('dashboard') %>
+
+
+<div class="user_container">
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>USER NAME</th>
+            <th>EMAIL</th>
+            <th>PHONE NUMBER</th>
+            <th>STATUS</th>
+        </tr>
+        
+        <% users.forEach((user,index)=>{ %>
+            <tr>
+                <td><%= index+1 %></td>
+                <td><%= user.username %></td>
+                <td><%= user.email %></td>
+                <td><%= user.phonenumber %></td>
+                <td>
+                    <form action="/status/<%= user._id %>" method="POST">
+                        <input type="hidden" name="method" value="PUT">
+                        <button class="p-1 rounded-5 touch active_btn" type="submit">
+                            <% if(user.active) { %>
+                                Active
+                            <% } else { %>
+                                Inactive
+                            <% } %>
+                            
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        <% }) %>
+    </table>
+</div>  
+<script>
+    let active_btn = document.querySelectorAll('.active_btn');
+			active_btn.forEach((btn)=>{
+                console.log(btn.innerText);
+                if(btn.innerText==="Active"){
+                    console.log(true);
+                    btn.style.background = "green";
+                }else{
+                    console.log(false);
+                    btn.style.background = "#910000";
+                    
+                }
+            })
+</script>
+
+        </body>
+        </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
